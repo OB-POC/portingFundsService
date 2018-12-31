@@ -5,8 +5,6 @@ var config = require('../data/config');
 var serviceUrlConfig  = require("../data/serviceURL's");
 var request = require('request');
 
-/* GET home page. */
-
 router.post('/mergeAccounts', function(req, res, next) {
   var token = req.headers['x-access-token'];
   var postData = req.body;
